@@ -33,7 +33,7 @@ import Input from "./components/In/Input";
 
 
 
-     plusMinus= (i)=>{
+     plusMinus= (i,event)=>{
           this.setState({
               count: + (this.state.count +i)>0 ? this.state.count+ +i:this.state.count+0
           });
@@ -90,7 +90,7 @@ import Input from "./components/In/Input";
          <div>
 
           <Count count={count}/>
-          <Input inputOnChange={this.inputHandel}/>
+          <Input  inputOnChange={this.inputHandel}/>
           <Button myHandler={this.plusMinus} AddVal={this.addValue} resetConter={this.Reset} />
 
 

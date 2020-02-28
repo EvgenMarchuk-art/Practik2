@@ -28,12 +28,12 @@ import './Button.css'
 
     return(
         <div >
-            <button  className="tret"  onClick={handlerClick.bind(null,1)} > ADD1 </button>
-            <button  className="tret"  onClick={handlerClick.bind(null,-1)} > minus1</button>
-            <button  className="tret"  onClick={handlerClick.bind(null,100)} > ADD100 </button>
-            <button  className="tret"  onClick={handlerClick.bind(null,-100)} > minus100</button>
-            <button  className="tret"  onClick={AddValue} > addValue</button>
-            <button  className="tret"  onClick={resetCount} > Reset</button>
+            <button   type="button" class="btn btn-warning m-10 "  onClick={handlerClick.bind(null,1)} > ADD1 </button>
+            <button   type="button" class="btn btn-warning m-10"  onClick={handlerClick.bind(null,-1)} > minus1</button>
+            <button   type="button" class="btn btn-warning m-10" onClick={handlerClick.bind(null,100)} > ADD100 </button>
+            <button   type="button" class="btn btn-warning m-10" onClick={handlerClick.bind(null,-100)} > minus100</button>
+            <button  type="button" class="btn btn-success mb-10" onClick={AddValue} > addValue</button>
+            <button   type="button" class="btn btn-danger m-10" onClick={resetCount} > Reset</button>
 
         </div>
 
